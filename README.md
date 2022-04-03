@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# 602277124 이종철
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 2022.03.30
 
-## Available Scripts
+### firebase 설정
+nwitter 폴더에서 >npm install firebase
+src 폴더에 firebase.js 생성 후 파이어 베이스 웹 복사한 코드 입력
 
-In the project directory, you can run:
+fire base 9버전 이상 하기 내용 입력
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+import 'firebase/compat/firestore';
 
-### `npm start`
+### firebase 비밀키 
+.env 파일 생성 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 라우터
+routes, components 각각 폴더 생성
+routes - Auth.js, EditProfile.js, Home.js, Profie.js 생성 후 값 입력
+componets - App.js 이하여 import문 수정
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+npm install react-router-dom 설치
 
-### `npm test`
+## 2022.03.23
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Git fata: bad boolean config value 'ture' for 'cire,ayticuf' 에러 노출
+Git, nodejs 재설치 후 진행 -> node js 에러 노출로 진행 불가
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 개인 노트북으로 Github 레포지토리 초기화, PUSH동작 확인
+  1. git init
+  2. git config user.name "parkeunsu-1"
+  3. git config user.email "tkfkdgo77855@naver.com"
+  4. git remote add origin "https://github.com/parkeunsu-1/nwitter.git"
+  5. git add .
+  6. git commit -m "init git"
+  7. git push -u origin master
+ 상기 순서로 명령어 입력후 Github PUSH 동작 정상 확인
