@@ -2,7 +2,7 @@
 
 ## 2022.03.30
 
-### firebase 설정
+### 1. firebase 설정
 nwitter 폴더에서 >npm install firebase
 src 폴더에 firebase.js 생성 후 파이어 베이스 웹 복사한 코드 입력
 
@@ -11,10 +11,10 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 
-### firebase 비밀키 
+### 2. firebase 비밀키 
 .env 파일 생성 
 
-### 라우터
+### 3. 라우터
 routes, components 각각 폴더 생성
 routes - Auth.js, EditProfile.js, Home.js, Profie.js 생성 후 값 입력
 componets - App.js 이하여 import문 수정
@@ -28,9 +28,9 @@ Git, nodejs 재설치 후 진행 -> node js 에러 노출로 진행 불가
 
 ### 개인 노트북으로 Github 레포지토리 초기화, PUSH동작 확인
   1. git init
-  2. git config user.name "parkeunsu-1"
-  3. git config user.email "tkfkdgo77855@naver.com"
-  4. git remote add origin "https://github.com/parkeunsu-1/nwitter.git"
+  2. git config user.name "2JONGCHUL"
+  3. git config user.email "qjwrhc15@naver.com"
+  4. git remote add origin "https://github.com/2JONGCHUL/nwitter.git"
   5. git add .
   6. git commit -m "init git"
   7. git push -u origin master
