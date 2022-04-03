@@ -1,6 +1,6 @@
 # 602277124 이종철
 
-## 2022.03.30
+## [2022.03.30]
 
 ### 1. firebase 설정
 nwitter 폴더에서 >npm install firebase
@@ -22,7 +22,7 @@ componets - App.js 이하여 import문 수정
 npm install react-router-dom 설치
 
 
-## 2022.03.23
+## [2022.03.23]
 
 Git fata: bad boolean config value 'ture' for 'cire,ayticuf' 에러 노출
 Git, nodejs 재설치 후 진행 -> node js 에러 노출로 진행 불가
