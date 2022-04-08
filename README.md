@@ -1,5 +1,20 @@
 # 602277124 이종철
 
+## [2022.04.06]
+### react-router-dom 설치, 라우터 설정하기
+> npm i react-router-dom@5.2.0
+> 
+### 파이어 베이스 로그인 준비
+jsconfig.js 파일 생성 및 작성
+
+firebase.js 파일 이름 변경
+firebase.js > fbase.js
+
+## fbase 변경후 에러 해결방법 ../src/fbase.js
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+
+
 ## [2022.03.30]
 
 ### 1. firebase 설정
