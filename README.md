@@ -12,7 +12,7 @@ firebase.js > fbase.js
 
 ## fbase 변경후 에러 해결방법 ../src/fbase.js
 >import firebase from 'firebase/compat/app';
->>import 'firebase/compat/auth';
+>import 'firebase/compat/auth';
 
 
 ## [2022.03.30]
