@@ -74,7 +74,7 @@ Git, nodejs 재설치 후 진행 -> node js 에러 노출로 진행 불가
 + 파이어베이스 서비스의 종류 및 특징
 
 ```
-원격 구성(Remote Config)
+\*원격 구성(Remote Config)
 앱을 업그레이드하지 않고도 여러분이 만든 앱의 동작이나 보이는 모습을 동적으로 변경할 수 있습니다
 
 인앱 메시징(In-App Messaging)
