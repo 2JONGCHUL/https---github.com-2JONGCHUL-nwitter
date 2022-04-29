@@ -1,4 +1,20 @@
 # 602277124 이종철
+## [2022.04.28]
+### 파이어베이스로 로그인과 회원가입 처리하기
+사용자 정보 출력 확인해주기
+firebase - Authentcation - Users 콘솔정보로 회원가입된 사용자 확인
+[Storage > IndexedDB > firebaseLocalStorageDB... > firebaseLocalStorage] 확인
+
+### 로그인, 로그아웃 하기
+useEffect 함수 사용하여 파이어베이스 로그인 정보를 받아, 파이어베이스가 초기화 
+
+로그아웃 (수동) : IndexedDB - Clear 하기
+
+에러와 에러메세지 파이어베이스로 처리하기
+const[error, setErro] = useState("");
+
+로그인,  회원가입 토글 버튼 적용
+
 ## [2022.04.14]
 ### 빈 화면 노출로 확인 불가 하여 원인 찾기
 .env 파일 nwitter 바로 밑에 넣어주기. 하여 문제 해결
