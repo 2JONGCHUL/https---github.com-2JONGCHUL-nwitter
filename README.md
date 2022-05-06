@@ -1,5 +1,18 @@
 # 602277124 이종철
-## [2022.04.28]
+## [2022.05.04]
+### signWithPopup 소셜 로그인 완성
+
+### 네이게이션 추가하고 로그아웃 처리하기
+./src/compnents/Navigation.js
+
+Router.js -> import Navigation from "./Navigation";
+
+### 트윗 등록 기능 만들기
+파이어베이스 데이터베이스 생성하기
+
+<firebase Database> -> <데이터베이스 만들기> -> <테스트모드에서 시작> -> <asia-northeast1> 생성
+
+#1# [2022.04.28]
 ### 파이어베이스로 로그인과 회원가입 처리하기
 사용자 정보 출력 확인해주기
 firebase - Authentcation - Users 콘솔정보로 회원가입된 사용자 확인
