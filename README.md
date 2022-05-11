@@ -1,4 +1,14 @@
 # 602277124 이종철
+## [2022.05.12]
+### 리액트에서 파이어 베이스 데이터베이스 사용해보기
+import "firebase/format/firestore";
+export const dbService = firebase.firestore();
+
+### 트윗 목록 저장, 출력하기
+./src/routes/Home.js 진입
+
+const nweetObject = {...}
+
 ## [2022.05.04]
 ### signWithPopup 소셜 로그인 완성
 
