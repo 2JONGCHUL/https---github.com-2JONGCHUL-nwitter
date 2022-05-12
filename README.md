@@ -1,5 +1,5 @@
 # 602277124 이종철
-## [2022.05.12]
+## [2022.05.11]
 ### 리액트에서 파이어 베이스 데이터베이스 사용해보기
 import "firebase/format/firestore";
 export const dbService = firebase.firestore();
