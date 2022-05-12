@@ -22,7 +22,7 @@ Router.js -> import Navigation from "./Navigation";
 
 <firebase Database> -> <데이터베이스 만들기> -> <테스트모드에서 시작> -> <asia-northeast1> 생성
 
-#1# [2022.04.28]
+## [2022.04.28]
 ### 파이어베이스로 로그인과 회원가입 처리하기
 사용자 정보 출력 확인해주기
 firebase - Authentcation - Users 콘솔정보로 회원가입된 사용자 확인
