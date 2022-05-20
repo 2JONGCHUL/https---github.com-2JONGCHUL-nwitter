@@ -1,28 +1,38 @@
 import { dbService } from "fbase";
 import { useEffect, useState } from "react";
+import Nweet from "components/Nweet";
 
-const Home = () => {
+const Home = ({userObj}) => {
+    //console.log(userObj);
     const [nweet, setNweet] = useState("");
     const [nweets, setNweets] = useState([]);
 
-    const getNweets = async () => {
-        const dbNweets = await dbService.collection("nweets").get();
-        dbNweets.forEach((document) => {
-        const nweetObject = { ...document.data(), id: document.id};
-        setNweets((prev) => [nweetObject, ...prev])
-        });
-    };
+//    const getNweets = async () => {
+//        const dbNweets = await dbService.collection("nweets").get();
+//        dbNweets.forEach((document) => {
+//        const nweetObject = { ...document.data(), id: document.id};
+//        setNweets((prev) => [nweetObject, ...prev])
+//        });
+//    };
     useEffect(() => {
-        getNweets();
+        dbService.collection("nweets").onSnapshot((snapshot) => {
+            const newArray = snapshot.docs.map((document) => ({
+                id: document.id,
+                ...document.data(),
+            }));
+            setNweets(newArray);
+            });
+//        getNweets();
     }, []);
 
-    console.log(nweets);
+    //console.log(nweets);
 
     const onSubmit = async (event) => {
         event.preventDefault();
         await dbService.collection("nweets").add({
             text: nweet,
             createdAt: Date.now(),
+            creatorId: userObj.uid,
         });
         setNweet("");
     };
@@ -35,6 +45,7 @@ const Home = () => {
         setNweet(value);
     };
     return (
+        <>
         <form onSubmit = {onSubmit}>
             <input
             value={nweet}
@@ -45,6 +56,15 @@ const Home = () => {
             />
             <input type="submit" value="Nweet" />
         </form>
+        <div>
+            {nweets.map((nweet) => (
+            <Nweet key={nweet.id}
+            nweetObj={nweet}
+            isOwner = {nweet.creatorId === userObj.uid}
+            />
+            ))}
+        </div>
+        </>
     );
 };
 //<span>Home</span>;
