@@ -1,4 +1,14 @@
 # 602277124 이종철
+## [2022.05.11]
+### 리액트에서 파이어 베이스 데이터베이스 사용해보기
+import "firebase/format/firestore";
+export const dbService = firebase.firestore();
+
+### 트윗 목록 저장, 출력하기
+./src/routes/Home.js 진입
+
+const nweetObject = {...}
+
 ## [2022.05.04]
 ### signWithPopup 소셜 로그인 완성
 
@@ -12,7 +22,7 @@ Router.js -> import Navigation from "./Navigation";
 
 <firebase Database> -> <데이터베이스 만들기> -> <테스트모드에서 시작> -> <asia-northeast1> 생성
 
-#1# [2022.04.28]
+## [2022.04.28]
 ### 파이어베이스로 로그인과 회원가입 처리하기
 사용자 정보 출력 확인해주기
 firebase - Authentcation - Users 콘솔정보로 회원가입된 사용자 확인
