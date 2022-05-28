@@ -5,7 +5,7 @@ import { authService } from "fbase";
 function App() {
    const [init, setInit] = useState(false);
    const [isLoggedIn, setIsLoggedIn] = useState(authService.currentUser);
-   const[userObj, setUserObj] = useState(null);
+   const [userObj, setUserObj] = useState(null);
 
    useEffect(() => {
       authService.onAuthStateChanged( (user) => {
@@ -26,7 +26,6 @@ function App() {
       ) : (
          "initialzing..."
       )}
-      <footer>&copy; {new Date().getFullYear()} Nwitter</footer>
       </>
    );
 }
