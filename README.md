@@ -1,4 +1,17 @@
 # 602277124 이종철
+## [2022.06.08]
+### 사진 저장 기능 만들기
+improt "firebase/storage";
+
+### 스토리지에 사진 저장해보기
+스토리지에서 제공 함수 putString 함수 URL 을 인자로 전달
+
+### 스토리지에서 사진 불러오기
+response.ref.getDownloadURL 함수
+ 
+### 내가 쓴 트윗만 보기
+파일 정리하기
+
 ## [2022.05.25]
 ### 사진 미리 보기 기능 만들기
 <input type = "file" accept="image/*" />
