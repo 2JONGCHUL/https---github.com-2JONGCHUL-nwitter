@@ -16,8 +16,8 @@ const Profile = ({userObj}) => {
         .where("creatorId", "==", userObj.uid)
         .orderBy("createdAt", "asc")
         .get();
-        console.log(nweets.docs.map((doc)=> doc.date()));
-    
+
+        console.log(nweets.docs.map((doc)=> doc.data()));
     };
 
     useEffect(() => {
